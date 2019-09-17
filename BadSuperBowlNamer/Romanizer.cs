@@ -7,8 +7,6 @@ namespace BadSuperBowlNamer
 {
     public class Romanizer
     {
-/*        public int ICounter { get; set; }
-        public int VCounter { get; set; }*/
         public string Romanized(int numberToConvert)
         {
 
@@ -40,38 +38,6 @@ namespace BadSuperBowlNamer
             };
             var stringToReturn = string.Join("", romanNumerals);
             return stringToReturn;
-
-            /*         for (var i = 0; i < numberToConvert; i++)
-                     {
-                         romanNumerals.Add('I');
-                     }
-
-
-                     foreach(char numeral in romanNumerals)
-                     {
-                         if(numeral == 'I')
-                         {
-                             ICounter++;
-                             if(ICounter == 5)
-                             {
-                                 VCounter++;
-                                 ICounter -= 5;
-                             }
-                         }
-                     }*/
-
-            //  var makesFives = romanNumerals.Where();
-            /*   if (numberToConvert >= 5)
-               {
-                   var stringWithRomanFive = stringToReturn.Remove(0, 5)
-                       .Insert(0, romanFive);
-                   return stringWithRomanFive;
-               }
-               else
-               {
-                   return stringToReturn.Join("");
-               }*/
-
         }
     }
 }
